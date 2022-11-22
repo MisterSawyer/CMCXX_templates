@@ -1,0 +1,9 @@
+[Dd]ebug/
+[Bb]in/
+[Ll]og/
+[Bb]uild/
+x64/
+x86/
+
+*.vscode/
+*.userprefs
