@@ -1,0 +1,3 @@
+[submodule "opengl/glew"]
+	path = opengl/glew
+	url = https://github.com/nigels-com/glew.git

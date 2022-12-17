@@ -1,4 +1,5 @@
-
+#Configure library
+add_subdirectory(lib)
 
 #Set project variables
 cmake_minimum_required (VERSION 3.5)
@@ -20,13 +21,10 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -v -g --debug -D_DEBUG=1")
 #Create executable target
 add_executable( ${EXE_NAME} ${EXE_SRC})
 
-find_library(LIB_VAR lib HINTS build/lib/lib)
-message(STATUS "Result of find_library: " ${LIB_VAR})
-
 #Link library `lib` to executable
 target_link_libraries(${EXE_NAME}
  PUBLIC
- ${LIB_VAR}
+ lib
  )
 
 #Add library incldues to executable target

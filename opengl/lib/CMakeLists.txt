@@ -13,11 +13,7 @@ set( LIB_NAME lib)
 file(GLOB LIB_SRC ${CMAKE_CURRENT_LIST_DIR}/src/*.cpp)
 
 #Create library project
-project(${LIB_NAME} 
-	VERSION 1.0.0
-	DESCRIPTION ${LIB_NAME}
-	LANGUAGES CXX)
-    
+project(${LIB_NAME} LANGUAGES CXX)
 set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -v -g --debug")
 

@@ -4,7 +4,8 @@
 
 #include <lib.h>
 
-int ExeMain()
+int main()
 {
+    lib::Foo();
     return 0;
 }
